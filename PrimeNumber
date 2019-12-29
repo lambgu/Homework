@@ -1,0 +1,21 @@
+public class PrimeNumber {
+
+  public static void main(String[] args) {
+		  int count = 0;
+		  int num = 1000;
+		  for (int i = 2; i < num; i++) {
+			  boolean a = true;
+			  for (int j = 2; j < i/2+1; j++) {
+			  	if (i % j == 0) {
+				  	a = false;
+				  	break;
+			  	}
+		  	}
+		  	if (a) {
+		  		System.out.println(i);
+		  		count++;
+		  	}
+	  	}
+		System.out.println("共有"+count+"个质数");
+	  }
+  }
